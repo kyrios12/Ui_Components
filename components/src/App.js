@@ -22,19 +22,19 @@ function App() {
     <div>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='accordion' element={<Accordion />} />
-          <Route path='back-top' element={<BackTop />} />
-          <Route path='modal' element={<Modal />} />
-          <Route path='counter' element = {<Counter />} />
-          <Route path='filterable-gallery' element = {<FilterableGallery />} />
-          <Route path='load-more' element = {<LoadMore />} />
-          <Route path='read-more' element = {<ReadMore />} />
-          <Route path='search-filter' element = {<SearchFilter />} />
-          <Route path='sidebar' element = {<Sidebar />} />
-          <Route path='sticky-header' element = {<StickyHeader />} />
-          <Route path='tabs' element = {<Tabs />} />
-          <Route path='clicked-modal' element = {<ClickedModal />} />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/accordion' element={<Accordion />} />
+          <Route path='/back-top' element={<BackTop />} />
+          <Route path='/modal' element={<Modal />} />
+          <Route path='/counter' element = {<Counter />} />
+          <Route path='/filterable-gallery' element = {<FilterableGallery />} />
+          <Route path='/load-more' element = {<LoadMore />} />
+          <Route path='/read-more' element = {<ReadMore />} />
+          <Route path='/search-filter' element = {<SearchFilter />} />
+          <Route path='/sidebar' element = {<Sidebar />} />
+          <Route path='/sticky-header' element = {<StickyHeader />} />
+          <Route path='/tabs' element = {<Tabs />} />
+          <Route path='/clicked-modal' element = {<ClickedModal />} />
         </Routes>
       </Suspense>
     </div>
